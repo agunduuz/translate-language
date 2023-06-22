@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --main-color: #f1c27b;
+  --content-color: #ffd89c;
+  --third-color: #a2cdb0;
+  --fourd-color: #85a389;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins';
+  background-image: linear-gradient(
+    to right bottom,
+    #f1c27b,
+    #cebe7a,
+    #b0b77e,
+    #97ae84,
+    #85a389
+  );
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--fourd-color);
+}
+
+main.container {
+  background-color: var(--fourd-color);
+  min-width: 350px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 49px 6px rgba(162, 205, 176, 1);
+  -moz-box-shadow: 0px 0px 49px 6px rgba(162, 205, 176, 1);
+  box-shadow: 0px 0px 49px 6px rgba(162, 205, 176, 1);
+}
+main article.box {
+  padding: 5px;
+}
+main article ul.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main article ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+main article ul li select {
+  padding: 2px;
+  font-family: inherit;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid var(--main-color);
+  background-color: var(--content-color);
+  color: var(--fourd-color);
+  border-radius: 5px;
+  margin: 0 10px;
+}
+main article ul li.exchange i {
+  color: var(--content-color);
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
+}
+main article ul li.exchange i:hover {
+  color: #fff;
+}
+main article ul li div.icons {
+  color: var(--third-color);
+  font-size: 14px;
+}
+
+main article ul li div.icons i {
+  margin: 0 3px;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
+}
+main article ul li div i:hover {
+  color: #fff;
+}
+main article section.text-controls {
+  display: flex;
+  margin-top: 15px;
+}
+main article section textarea {
+  height: 150px;
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  background-color: transparent;
+  resize: none;
+  color: #fff;
+  border-left: 2px solid var(--content-color);
+  border-top: 2px solid var(--content-color);
+}
+main button#btnTranslate {
+  background-color: var(--third-color);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--fourd-color);
+  width: 100%;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+main button#btnTranslate:hover {
+  background-color: var(--fourd-color);
+  color: #fff;
+  transform: scale(0.97);
+}
